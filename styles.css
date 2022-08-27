@@ -1,0 +1,44 @@
+.margin {
+    margin: 20px;
+}
+.border-green {
+    border-bottom: 5px solid #a6ce39;
+}
+.text-blue {
+    color: #5478b9;
+}
+.text-orange {
+    color: #f4863c;
+}
+.text-gray {
+    color: #e8e8e8;
+}
+.bg-gray {
+    background-color: #e8e8e8;
+}
+.text-shadow {
+    color: white;
+    text-shadow: 2px 2px 0 rgb(128, 128, 128);
+}
+footer {
+    border-bottom: 30px solid #808285;
+}
+.wrap {
+    line-break: anywhere;
+}
+@media screen and (max-width: 767) {
+    .mphone {
+        margin-bottom: 10px !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    footer {
+        text-align: center;
+    }
+    #help {
+        margin-bottom: 10px !important;
+    }
+    .pxphone {
+        padding: 0 10px !important;
+    }
+}
