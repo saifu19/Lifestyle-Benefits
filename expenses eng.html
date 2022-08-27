@@ -21,15 +21,15 @@
 </head>
 <body>
     <div class="mt-2">
-        <div class="px-5 pxphone">
-            <div id="header" class="container-fluid border-green">
+        <div class="padding">
+            <div id="header" class="container-fluid border-green px-0">
                 <h1 class="display-2 text-blue main-heading">Expense List</h1>
             </div>
         </div>
 
         <!-- Main -->
-        <div class="px-5 mt-3 pxphone container-fluid">
-            <div class="row mx-2">
+        <div class="padding mt-3 container-fluid">
+            <div class="row">
                 <div class="col-md-6">
                     <div class="mb-5">
                         <h4 class="text-orange">
@@ -223,7 +223,28 @@
             </div>
         </div>
     </div>
-    <footer></footer>
+
+    <!-- Footer -->
+    <footer class="bg-gray py-2 padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 me-5 d-sm-flex align-items-end">
+                    <div>
+                        <p id="need" class="display-5 lh-1 mb-0 text-shadow">need</p>
+                        <p id="help" class="display-3 text-shadow lh-0 mb-0">help?</p>
+                    </div>
+                </div>
+                <div class="col-sm-9 ps-5 d-sm-flex align-items-center">
+                    <div>
+                        <p class="lead text-grey mb-1 footer-text">The Employee Services Team is a click or a call away</p>
+                        <p class="lead text-grey footer-text">
+                            Call <span class="text-blue font-weight-bold wrap">877.262.8050</span> or email <span class="text-blue font-weight-bold wrap">employeeservices@cmc.com</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
   
 
 <!-- Muse Javascript Plugins -->
@@ -242,5 +263,33 @@
     <script src="assets/vendor/purecounterjs/dist/purecounter.js"></script>
     <script src="assets/vendor/prism/prism.js"></script>
     <script src="assets/js/theme-custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="fittext.js"></script>
+    <script>
+        function resizeText(width) {
+            if (width < 576) {
+                jQuery(".main-heading").fitText(0.9);
+                $("#need").removeClass("display-5");
+                $("#help").removeClass("display-3");
+                $("#need").addClass("display-6");
+                $("#help").addClass("display-5");
+            } else {
+                $(".main-heading").fitText(1.2)
+                if ($("#need").hasClass("display-5")) {
+                    $("#need").addClass("display-5");
+                    $("#help").addClass("display-3");
+                    $("#need").removeClass("display-6");
+                    $("#help").removeClass("display-5");
+                }
+                
+            }
+        }
+        $(document).ready(function(){
+            resizeText($(window).width());
+        })
+        $(window).resize(function() {
+            resizeText($(window).width())
+        })
+    </script>
 </body>
 </html>

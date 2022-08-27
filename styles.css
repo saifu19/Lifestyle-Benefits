@@ -16,6 +16,14 @@
 .bg-gray {
     background-color: #e8e8e8;
 }
+.card-container {
+    height: 50vh;
+    display: flex !important;
+    align-items: center !important;
+}
+.bg-card {
+    background-color: #f5f5f6;
+}
 .text-shadow {
     color: white;
     text-shadow: 2px 2px 0 rgb(128, 128, 128);
@@ -26,9 +34,15 @@ footer {
 .wrap {
     line-break: anywhere;
 }
-@media screen and (max-width: 767) {
+.padding {
+    padding: 0 7.5vw;
+}
+@media screen and (max-width: 767px) {
     .mphone {
         margin-bottom: 10px !important;
+    }
+    .padding {
+        padding: 0 5vw;
     }
 }
 @media screen and (max-width: 576px) {
