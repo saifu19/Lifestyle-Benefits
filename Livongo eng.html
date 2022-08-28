@@ -68,7 +68,7 @@
                                 <div class="mx-auto">
                                     <span class="circle circle-lg m-auto mt-3"><img src="assets/svg/icons/gift.svg" alt="Mail" style="width:20px"></span>
                                     <p class="mt-2">
-                                        High blood pressure increases the risk of heart disease & stroke,<span class="text-blue font-weight-bold">two leading causes</span> of death
+                                        High blood pressure increases the risk of heart disease & stroke, <span class="text-blue font-weight-bold">two leading causes</span> of death
                                     </p>
                                 </div>
                             </div>
@@ -218,8 +218,8 @@
             <div class="row">
                 <div class="col-sm-3 me-5 d-sm-flex align-items-end">
                     <div>
-                        <p id="need" class="display-5 lh-1 mb-0 text-shadow">need</p>
-                        <p id="help" class="display-3 text-shadow lh-0 mb-0">help?</p>
+                        <p id="need" class="display-6 lh-1 mb-0 text-shadow">need</p>
+                        <p id="help" class="display-5 text-shadow lh-0 mb-0">help?</p>
                     </div>
                 </div>
                 <div class="col-sm-9 ps-5 d-sm-flex align-items-center">
@@ -257,19 +257,19 @@
             if (width < 576) {
                 jQuery(".main-heading").fitText(0.9);
                 jQuery(".main-text").fitText(1.2);
-                $("#need").removeClass("display-5");
-                $("#help").removeClass("display-3");
-                $("#need").addClass("display-6");
-                $("#help").addClass("display-5");
+                // $("#need").removeClass("display-5");
+                // $("#help").removeClass("display-3");
+                // $("#need").addClass("display-6");
+                // $("#help").addClass("display-5");
             } else {
                 $(".main-heading").fitText(1.2, {maxFontSize: "110px"})
                 $(".main-text").fitText(2.2, {maxFontSize: "80px"})
-                if ($("#need").hasClass("display-5")) {
-                    $("#need").addClass("display-5");
-                    $("#help").addClass("display-3");
-                    $("#need").removeClass("display-6");
-                    $("#help").removeClass("display-5");
-                }
+                // if ($("#need").hasClass("display-5")) {
+                //     $("#need").addClass("display-5");
+                //     $("#help").addClass("display-3");
+                //     $("#need").removeClass("display-6");
+                //     $("#help").removeClass("display-5");
+                // }
                 
             }
         }
