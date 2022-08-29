@@ -291,25 +291,5 @@
     <script src="assets/vendor/purecounterjs/dist/purecounter.js"></script>
     <script src="assets/vendor/prism/prism.js"></script>
     <script src="assets/js/theme-custom.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="fittext.js"></script>
-    <script>
-        function resizeText(width) {
-            if (width < 576) {
-                jQuery(".main-heading").fitText(0.9);
-                jQuery(".main-text").fitText(1.2);
-            } else {
-                $(".main-heading").fitText(1.5, {maxFontSize: "110px"})
-                $(".main-text").fitText(2.5, {maxFontSize: "80px"})
-                
-            }
-        }
-        $(document).ready(function(){
-            resizeText($(window).width());
-        })
-        $(window).resize(function() {
-            resizeText($(window).width())
-        })
-    </script>
 </body>
 </html>

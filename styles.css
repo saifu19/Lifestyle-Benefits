@@ -57,6 +57,12 @@ footer {
     }
 }
 @media screen and (max-width: 576px) {
+    .main-heading {
+        font-size: 55px !important;
+    }
+    .main-text {
+        font-size: 40px !important;
+    }
     footer {
         text-align: center;
     }
