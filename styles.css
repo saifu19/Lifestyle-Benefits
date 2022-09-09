@@ -3,6 +3,36 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+.nav-padding {
+    padding: 2vw;
+}
+.bg-green {
+    background-color: #AED24C;
+    color: white;
+}
+.text-green-nav {
+    font-family: Roboto, sans-serif;
+    color: #fff;
+}
+.enroll {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+}
+.bg-header {
+    background-image: url('bg-header.jpg');
+    background-position: center 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+.welcome {
+    color: hsla(0, 0%, 100%, 0.63);
+    /* font-weight: 700; */
+}
+#carousel {
+    height: 30vh;
+    background-color: #DDDDDD;
+}
 .main {
     flex: 1;
 }
@@ -57,7 +87,10 @@ footer {
     }
 }
 @media screen and (max-width: 576px) {
-    .main-heading {
+    .bg-header {
+        justify-content: center;
+    }
+    .main-heading, .welcome {
         font-size: 55px !important;
     }
     .main-text {
