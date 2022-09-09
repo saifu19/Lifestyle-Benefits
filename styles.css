@@ -76,7 +76,7 @@ footer {
     line-break: anywhere;
 }
 .padding {
-    padding: 0 7.5vw;
+    padding: 0 6.5vw;
 }
 @media screen and (max-width: 767px) {
     .mphone {
