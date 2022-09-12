@@ -78,12 +78,21 @@ footer {
 .padding {
     padding: 0 6.5vw;
 }
+.margin {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 @media screen and (max-width: 767px) {
     .mphone {
         margin-bottom: 10px !important;
     }
     .padding {
         padding: 0 5vw;
+    }
+    .margin {
+        width: 90%;
+        margin-right: 0;
+        margin-left: auto;
     }
 }
 @media screen and (max-width: 576px) {
