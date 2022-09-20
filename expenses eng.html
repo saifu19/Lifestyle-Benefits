@@ -20,7 +20,46 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="padding">
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light margin">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.svg">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link text-uppercase text-dark" href="#">Scholarship & Gift</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-uppercase text-dark" href="#">Home</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-green py-3 padding">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-sm-9">
+                    <p class="h6 text-center font-weight-normal text-green-nav mb-0">Need Help? The Employee Services Team is just a phone call away. 877.262.8050</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-header padding d-flex align-items-end">
+            <div class="mt-3 mb-4">
+                <span class="welcome display-1 d-inline">Welcome</span>
+                <br>
+                <div class="d-flex justify-content-end">
+                    <span class="h3 text-green-nav">to your CMC benefits</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mt-3">
         <div id="header" class="container-fluid border-green px-0 margin">
             <h1 class="display-2 text-blue main-heading">Expense List</h1>
         </div>
@@ -223,24 +262,48 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray py-2 padding">
+    <footer id="footer-new" class="bg-gray">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3 me-5 d-sm-flex align-items-end">
-                    <div>
-                        <p id="need" class="display-6 lh-1 mb-0 text-shadow">need</p>
-                        <p id="help" class="display-5 text-shadow lh-0 mb-0">help?</p>
+            <div id="footer-main">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-5 d-flex justify-content-end">
+                        <div>
+                            <div id="help-box">
+                                <p class="needHelp" style="margin-left: 5px">Need</p>
+                                <p class="needHelp">help?</p>
+                            </div>
+                            <div id="call-box">
+                                <p class="call d-inline-block">Call</p>
+                            </div>
+                        </div>
+                        
                     </div>
-                </div>
-                <div class="col-sm-9 ps-5 d-sm-flex align-items-center">
-                    <div>
-                        <p class="lead text-grey mb-1 footer-text">The Employee Services Team is a click or a call away</p>
-                        <p class="lead text-grey footer-text">
-                            Call <span class="text-blue font-weight-bold wrap">877.262.8050</span> or email <span class="text-blue font-weight-bold wrap">employeeservices@cmc.com</span>
+                    <div class="col-lg-6 col-7">
+                        <p class="footer-main-text">
+                            The Employee Services Team is just a phone call away
+                        </p>
+                        <p class="footer-main-text mt-md-5">
+                            877.262.8050
                         </p>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="w-100" style="background-color: #A0A0A0">
+            <div class="margin p-3">
+                <div class="d-flex justify-content-between pt-3 pb-5">
+                    <img src="logo.svg">
+                    <button class="btn text-uppercase text-white">Home</button>
+                </div>
+                <p class="mb-0 pb-5" style="color: #FFFFFF70; font-size:14px">
+                    Note: Not all employees are eligible to participate in the plans described. Eligibility is dependent on the terms of any collective bargaining agreement, employee classification and/or plan documents applicable to the individual employee.
+                </p>
+            </div>
+        </div>
+        <div class="w-100 text-center" style="background-color: #424549;">
+            <p class="py-4 mb-0" style="color: #FFFFFF47">
+                Copyright &copy;2020 Commercial Metals | <span class="text-uppercase">Content on this site is intended for U.S. benefits eligible employees</span> 
+            </p>
         </div>
     </footer>
   
