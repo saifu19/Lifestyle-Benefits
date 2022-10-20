@@ -109,6 +109,31 @@ footer {
     line-height: 34px;
     font-weight: bold;
 }
+.padding-box {
+    padding: 10px;
+    border-top: 7px solid;
+}
+.b-purple {
+    border-color: #9f6eaf;
+}
+.b-yellow {
+    border-color: #ffc20e;
+}
+.b-blue {
+    border-color: #57b6e3;
+}
+.b-green {
+    border-color: #a6ce39;
+}
+.b-dgreen {
+    border-color: #00b37d
+}
+.b-orange {
+    border-color: #f38231;
+}
+.wellness-cols-border {
+    border-right: 2px solid #dddddd;
+}
 .footer-main-text {
     color: #000;
     font-size: 30px;
@@ -116,6 +141,57 @@ footer {
     font-weight: bold;
     line-height: 33px;
 }
+.border-bottom {
+    border-bottom: 2px solid gray;
+}
+
+/* Hex Grid */
+
+/* .hex {
+    float: left;
+    margin-right: -40px;
+    margin-bottom: -75px; 
+}
+.hex .left {
+    float: left;
+    width: 0;
+    border-right: 46px solid #6C6;
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+}
+.hex .middle {
+    float: left;
+    width: 92px;
+    height: 160px;
+    background: #6C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hex .right {
+    float: left;
+    width: 0;
+    border-left: 46px solid #6C6;
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+}
+.hex-row {
+    clear: left;
+}
+.hex-row .even {
+    margin-top: 80px;
+}
+.last-row {
+    margin-left: 143px;
+}
+.last-row .hex {
+    margin-right: 105px;
+    margin-top: 0px;
+} */
+
+
 @media screen and (max-width: 767px) {
     .mphone {
         margin-bottom: 10px !important;
